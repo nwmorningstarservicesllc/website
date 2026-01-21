@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact — Morningstar Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Morningstar Services LLC</div>
+  <a href="index.html" class="nav-right">Home</a>
+</header>
+
+<section class="contact-page">
+  <h1>Contact</h1>
+
+  <div class="contact-grid">
+
+    <div class="contact-info">
+      <h2>Let’s Talk</h2>
+      <p>
+        Have a question or want a quote?  
+        Reach out and I’ll get back to you as soon as possible.
+      </p>
+
+      <p><strong>Service Area:</strong><br>Portland Metropolitan Area</p>
+
+      <!-- You can add phone/email here later -->
+      <!-- <p><strong>Phone:</strong> (xxx) xxx-xxxx</p> -->
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+      <!-- Replace with your email above -->
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Morningstar Contact Request">
+
+      <div class="form-group">
+        <label>First Name *</label>
+        <input type="text" name="first_name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Last Name *</label>
+        <input type="text" name="last_name" required>
+      </div>
+
+      <div class="form-group full">
+        <label>Email *</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="form-group full">
+        <label>Message *</label>
+        <textarea name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send</button>
+
+    </form>
+
+  </div>
+</section>
+
+</body>
+</html>
