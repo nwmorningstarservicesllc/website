@@ -94,3 +94,86 @@ body {
   align-items: center;
   justify-content: center;
 }
+.contact-page {
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-page h1 {
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 80px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: white;
+}
+
+.contact-form button {
+  grid-column: span 2;
+  margin-top: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page h1 {
+    font-size: 48px;
+  }
+}
+
